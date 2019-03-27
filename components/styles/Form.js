@@ -33,14 +33,14 @@ const Form = styled.form`
     border: 1px solid black;
     &:focus {
       outline: 0;
-      border-color: ${props => props.theme.red};
+      border-color: ${props => props.theme.pink};
     }
   }
   button,
   input[type='submit'] {
     width: auto;
-    background: red;
-    color: white;
+    background: #F476C1;
+    color: #1B2367;
     border: 0;
     font-size: 2rem;
     font-weight: 600;
@@ -57,7 +57,7 @@ const Form = styled.form`
       height: 10px;
       content: '';
       display: block;
-      background-image: linear-gradient(to right, #ff3019 0%, #e2b04a 50%, #ff3019 100%);
+      background-image: linear-gradient(to right, #F476C1 0%, #1B2367 50%, #F476C1 100%);
     }
     &[aria-busy='true']::before {
       background-size: 50% auto;
