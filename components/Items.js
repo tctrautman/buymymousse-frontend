@@ -32,8 +32,7 @@ const ItemsList = styled.div`
 class Items extends Component {
     render() {
         return (
-            <div>
-                <p>Items!</p>
+            <Center>
                 <Query query={ALL_ITEMS_QUERY}>
                     {({ data, error, loading }) => {
                         if (loading) return <p>Loading...</p>
@@ -43,10 +42,10 @@ class Items extends Component {
                         </ItemsList>
                     }}
                 </Query>
-            </div>
+            </Center>
         );
     }
 }
 
 export default Items;
-export {ALL_ITEMS_QUERY };
+export { ALL_ITEMS_QUERY };
