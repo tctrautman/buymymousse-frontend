@@ -19,12 +19,13 @@ const PAGINATION_QUERY = gql`
 const Pagination = props =>  (
     <Query query={PAGINATION_QUERY}>
         {({data, loading, error}) => {
+            if (loading) return <p>Loading...</p>
+            if (error) return <Error error={error} />
             const count = data.itemsConnection.aggregate.count;
             const pages = Math.ceil(count / perPage);
             const page = props.page;
-            if (loading) return <p>Loading...</p>
             return (
-                <PaginationStyles>
+                <PaginationStyles data-test="pagination">
                     <Head>
                         <title>Buy My Mousse -- Page {page} of {pages}</title>
                     </Head>
@@ -56,3 +57,4 @@ const Pagination = props =>  (
 )
 
 export default Pagination;
+export { PAGINATION_QUERY };
