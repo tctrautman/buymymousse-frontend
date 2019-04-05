@@ -1,6 +1,9 @@
 {
   "name": "buy-my-mousse-front-end",
   "version": "1.0.0",
+  "engines": {
+    "node": "11.9.0"
+  },
   "description": "Front-end for Buy My Mousse -- a toy ecommerce app",
   "main": "index.js",
   "scripts": {
