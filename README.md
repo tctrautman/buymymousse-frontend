@@ -26,4 +26,4 @@ With Buy My Mousse users buy and sell the best drink of all time (Pamplemousse L
 
 ## Technologies Used
 
-The front-end of this app using [Next.js](https://nextjs.org/) to make this a static site written in React, and [Apollo Client](https://www.apollographql.com/docs/react/) to help manage local state and facilitate GraphQL calls to the back-end.  Testing is in [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/).
+The front-end of this app was built using [Next.js](https://nextjs.org/) to make this app a static site written in React, and [Apollo Client](https://www.apollographql.com/docs/react/) to help manage local state and facilitate GraphQL calls to the back-end.  Testing is in [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/).
